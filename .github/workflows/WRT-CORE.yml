@@ -43,6 +43,9 @@ on:
       WRT_TEST:
         required: false
         type: string
+      WRT_CUSTOM:
+        required: false
+        type: string
 
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -58,6 +61,7 @@ env:
   WRT_SOURCE: ${{inputs.WRT_SOURCE}}
   WRT_PACKAGE: ${{inputs.WRT_PACKAGE}}
   WRT_TEST: ${{inputs.WRT_TEST}}
+  WRT_CUSTOM: ${{inputs.WRT_CUSTOM}}
 
 jobs:
   core:
