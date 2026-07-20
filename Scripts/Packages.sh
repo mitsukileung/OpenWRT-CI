@@ -83,8 +83,8 @@ UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "dev"
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 
 #替换sing-box的makefile
-rm -rf ./feeds/packages/net/sing-box/*
-wget -O ./feeds/packages/net/sing-box/Makefile https://raw.githubusercontent.com/Openwrt-Passwall/openwrt-passwall-packages/refs/heads/main/sing-box/Makefile
+#rm -rf ./feeds/packages/net/sing-box/*
+#wget -O ./feeds/packages/net/sing-box/Makefile https://raw.githubusercontent.com/Openwrt-Passwall/openwrt-passwall-packages/refs/heads/main/sing-box/Makefile
 
 #更新软件包版本
 UPDATE_VERSION() {
